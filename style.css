@@ -88,9 +88,11 @@ nav a:hover{
 }
 
 h1{
-    margin-bottom: 40px;
+    
     color: var(--orange_cl);
     font-size: 20px;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .cards{
@@ -191,3 +193,117 @@ strong{
     background-color: #ffa36e;
 }
 
+/*Galeria*/
+
+#gallery{
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--dark_cl);
+}
+
+.cortes{
+    display: flex;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    width: 70%;     
+
+    margin: 0 auto;
+}
+
+.cortes img{
+    padding: 0px 2px 0px 2px;
+    border: 4px solid rgba(245, 222, 179, 0);
+    transition: border 0.2s;
+}
+
+.cortes img:hover{
+    border: 4px dashed var(--orange_cl);
+}
+
+#about{
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--brown_cl);
+}
+
+
+.info{
+    width: 70%;
+    margin: 0 auto;
+    background-color: var(--dark_cl);
+    border-radius: 10px;
+    padding: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#about h4{
+    background-color: var(--orange_cl);
+    width: 270px;
+    padding: 6px;
+    text-align: center;
+    color: var(--brown_cl);
+}
+
+#about .card{
+    background-color: var(--white_cl);
+    padding: 20px;
+    border-radius: 10px;
+    border: 4px dashed var(--orange_cl);
+    width: 370px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 30px;
+}
+
+#about h3, #about p{
+    color: var(--white_cl);
+    font-size: 20px;
+    width: 400px;
+}
+
+#about .info .content {
+    display: block;
+}
+
+.info_2{
+    padding: 220px;
+}
+
+#content h3, p, h4{
+    margin-top: 30px;
+}
+
+footer{
+    background-color: var(--dark_cl);
+}
+
+#bot {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    padding: 60px 0px 60px 0px;
+}
+
+#bot h3{
+    margin-bottom: 10px;
+    color: var(--orange_cl);
+}
+
+#bot .left_content{
+    background-color: var(--white_cl);
+    width: 600px;
+    height: 160px;
+}
