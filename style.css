@@ -10,12 +10,11 @@
     --dark_cl: #1D1D1D;
     --orange_cl: #FF8B4A;
     --brown_cl: #4B3C34;
-    --white_cl: rgb(231, 231, 231);
+    --white_cl: rgb(255, 255, 255);
 }
 
 body{
     width: 100%;
-    height: 12000px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -149,15 +148,12 @@ strong{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    height: 20px;
 }   
 
 .btn .agendar{
     display: flex;
     align-items: center;
     justify-content: center;
-    
     background-color: var(--orange_cl);
     border-radius: 10px;
 }
@@ -286,6 +282,9 @@ strong{
 
 footer{
     background-color: var(--dark_cl);
+    width: 100%;
+ 
+    bottom: 0;
 }
 
 #bot {
@@ -302,8 +301,34 @@ footer{
     color: var(--orange_cl);
 }
 
-#bot .left_content{
+
+.left_content{
     background-color: var(--white_cl);
     width: 600px;
-    height: 160px;
+    height: 120px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left_content span{
+    margin-left: 20px;
+    margin-right: 60px;
+    font-size: 20px;
+}
+
+.left .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left .btn a{
+    width: 100%;
+    margin-top: -10px;
+}
+
+.left_content img{
+    width: 32px;
 }
