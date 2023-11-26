@@ -26,6 +26,12 @@ header, img nav{
     background-color: var(--dark_cl);
 }
 
+header img{
+    margin-bottom: 30px;
+    border: 4px dashed var(--orange_cl);
+    border-radius: 50%;
+}
+
 nav a{
     margin: 10px;
     text-decoration: none;
@@ -33,6 +39,7 @@ nav a{
     font-size: 15px;
     padding: 5px;
     transition: background-color 0.2s;
+    border-radius: 4px;
 }
 
 nav a:hover{
@@ -52,6 +59,11 @@ nav a:hover{
     height: 600px;
 }
 
+#carousel article img{
+    width: 100%;
+    height: 600px;
+}
+
 .down_angle{
     position: absolute; /* ABSOLUTE na tag "filha", faz com que possamos mover .donw_angle por todo HTML*/
     left: 50%; /* Posicionando no meio horizontalmente */
@@ -62,10 +74,7 @@ nav a:hover{
     z-index: 1;
 }
 
-#carousel article img{
-    width: 100%;
-    height: 600px;
-}   
+/*HORÁRIOS*/
 
 #schedules{
     background-color: var(--brown_cl);
@@ -87,7 +96,6 @@ nav a:hover{
 }
 
 h1{
-    
     color: var(--orange_cl);
     font-size: 20px;
     text-align: center;
@@ -99,7 +107,6 @@ h1{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    
 }
 
 .cards article{
@@ -189,7 +196,7 @@ strong{
     background-color: #ffa36e;
 }
 
-/*Galeria*/
+/*GALERIA*/
 
 #gallery{
     width: 100%;
@@ -215,11 +222,14 @@ strong{
     padding: 0px 2px 0px 2px;
     border: 4px solid rgba(245, 222, 179, 0);
     transition: border 0.2s;
+    border-radius: 10px;
 }
 
 .cortes img:hover{
     border: 4px dashed var(--orange_cl);
 }
+
+/*SOBRE*/
 
 #about{
     width: 100%;
@@ -227,7 +237,6 @@ strong{
     padding-bottom: 100px;
     background-color: var(--brown_cl);
 }
-
 
 .info{
     width: 70%;
@@ -287,6 +296,8 @@ footer{
     bottom: 0;
 }
 
+/*FOOTER*/
+
 #bot {
     width: 70%;
     margin: 0 auto;
@@ -302,20 +313,23 @@ footer{
 }
 
 
+
 .left_content{
-    background-color: var(--white_cl);
-    width: 600px;
+
+    width: 400px;
     height: 120px;
     border-radius: 10px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    
 }
 
 .left_content span{
-    margin-left: 20px;
+    margin-left: 12px;
     margin-right: 60px;
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--white_cl);
 }
 
 .left .btn{
@@ -326,9 +340,243 @@ footer{
 
 .left .btn a{
     width: 100%;
-    margin-top: -10px;
+}
+
+.insta{
+    margin-right: 16px;
 }
 
 .left_content img{
-    width: 32px;
+    width: 42px;
 }
+
+.right iframe{
+    width: 600px;
+    height: 210px;
+}
+
+/*Media queries*/
+
+/*Header*/
+
+@media (max-width: 1600px) {
+    #bot{
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .left{
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .right{
+        width: 60%;
+        margin: 40px auto;
+    }
+
+    .right iframe{
+        width: 100%;
+    }
+}
+
+@media (max-width: 1370px) {
+    .cards .first b{
+        background-color: var(--orange_cl);
+        padding: 2px;
+        text-align: center;
+    }
+
+    #about .info{
+
+        text-align: center;
+        flex-direction:column-reverse
+    }
+
+    #about .alisson{
+        margin-bottom: 30px;
+    }
+
+    #about h4{
+        width: 370px;
+        margin: 30px auto;
+    }
+
+    #about .card{
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    
+    .cards{
+        font-size: 16px;
+        flex-wrap: wrap;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .cards article{
+        width: 400px;
+        padding: 10px;
+    }
+    
+    #schedules{
+        background-color: var(--brown_cl);
+        width: 100%;
+        height: 1000px;
+        position: relative;
+    }
+
+    .btn{
+
+        flex-wrap: wrap-reverse;
+
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+        padding: 20px;
+    }
+
+    .btn .agendar{
+        width: 400px;
+    }
+
+    .cards .first b{
+        background-color: var(--orange_cl);
+        padding: 0px;
+        text-align: center;
+    }
+
+    
+    .cortes img{
+        width: 250px;
+    }
+    
+
+
+}
+
+@media (max-width: 768px) {
+
+    nav a{
+        margin: 8px;
+        text-decoration: none;
+        color: white;
+        font-size: 12px;
+        padding: 3px;
+        transition: background-color 0.2s;        
+    }
+
+    .cards{
+        font-size: 14px;
+        flex-wrap: wrap;
+    }
+        
+    strong{
+        color: var(--orange_cl);
+    }
+    
+
+    
+    .btn{
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }   
+    
+    .btn .agendar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--orange_cl);
+        border-radius: 10px;
+    }
+    
+    .btn .obs{
+        display: block;
+    }
+    
+    .btn h4{
+        color: var(--white_cl);
+    }
+    
+    .btn span{
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 12px;
+    }
+    
+    .btn img{
+        width: 42px;
+        margin-left: 20px;
+    }
+    
+    .btn a{
+        text-decoration: none;
+        color: var(--white_cl);
+        font-weight: 600;
+        width: 270px;
+        padding: 6px;
+        transition: background-color 0.2s;
+    }
+    
+    .btn a:hover{
+        background-color: #ffa36e;
+    }
+
+    
+    .cortes img{
+        width: 220px;
+    }
+
+}
+
+@media (max-width: 645px) {
+    .cortes img{
+        width: 300px;
+    }
+}
+
+
+@media (max-width: 520px) {
+
+
+
+    header{
+        padding: 30px;
+    }
+
+    header img{
+        width: 150px;
+        margin-bottom: 10px;
+    }
+
+    header nav a{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        margin: 10px auto;
+        background-color: var(--orange_cl);
+    }
+
+    .marked{
+        background-color: var(--orange_cl);
+        padding: 5px;
+        width: 100px;
+        margin: auto;
+    }
+
+}
+
+/*Main*/
+
+/*Carousel*/
