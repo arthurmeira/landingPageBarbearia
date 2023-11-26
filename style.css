@@ -151,7 +151,7 @@ strong{
 }
 
 .btn{
-    margin-top: 40px;
+    margin-top: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -281,6 +281,7 @@ strong{
     color: var(--white_cl);
     font-size: 20px;
     width: 400px;
+    margin: 0 auto;
 }
 
 #about .info .content {
@@ -321,8 +322,7 @@ footer{
 
 .left_content{
 
-    width: 400px;
-    height: 120px;
+    height: 75px;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -371,13 +371,10 @@ footer{
         justify-content: center;
     }
 
-    .left{
-        width: 60%;
-        margin: 0 auto;
-    }
+   
 
     .right{
-        width: 60%;
+        width: 100%;
         margin: 40px auto;
     }
 
@@ -460,7 +457,7 @@ footer{
         justify-content: center;
 
         text-align: center;
-        padding: 20px;
+        padding: 0px;
     }
 
     .btn .agendar{
@@ -530,7 +527,7 @@ footer{
         color: var(--white_cl);
         font-weight: 600;
         width: 270px;
-        padding: 6px;
+        padding: 6px 40px ;
         transition: background-color 0.2s;
     }
     
@@ -571,17 +568,56 @@ footer{
         margin-bottom: 10px;
     }
 
+
     #about .alisson{
         border-radius: 10px;
         width: 300px;
     }
 
-    .first {
+   a .agendar{
+        width: 1600px;
+    }
+    
+    .left_content{
+        display: block;
+        align-items: center;
+        margin: 0 auto;
+    
+    }
+
+   #about .card,#about p, #about h4, #about h3{
+        width: 250px; 
+        margin: 10 auto; 
+        font-size: 15px;
+        display: block;
+        
+    }
+    #about p{
+        margin-top: 30px;
+    }
+    .card article{
+        padding: 20px;      
+    }
+
+    #about{
+       width: 100%;
+       margin: 0 auto;
+    }
+
+    .left{
+        display: flex;
+        align-items: center;
+        
+        flex-direction: column;
         
     }
 
+   
+
+
+    
+
+
+    
+
 }
-
-/*Main*/
-
-/*Carousel*/
