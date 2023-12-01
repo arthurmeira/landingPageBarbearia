@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" defer src="carousel.js"></script>
     <title>Barbearia Modelo</title>
 </head>
 <body>
@@ -11,20 +12,24 @@
         <img src="images/header/logo.png" alt="">
         <nav>
             <a href="#schedules">HORÁRIOS</a>
-            <a href="#">GALERIA</a>
-            <a href="#">SOBRE</a>
-            <a href="#">LOCALIZAÇÃO</a>
-            <a class="marked" href="#">CONTATO</a>
+            <a href="#gallery">GALERIA</a>
+            <a href="#about">SOBRE</a>
+            <a href="#bot">LOCALIZAÇÃO</a>
+            <a class="marked" href="#bot">CONTATO</a>
         </nav>
     </header>
 
     <main>
         <section id="carousel">
-            <article>
-                <img src="images/carousel/.jpg" alt="">
-            </article>
 
-            <img class="down_angle" src="images/carousel/down_angle.png" alt="down_angle">
+            <section class="carr">
+                <img id="btnVoltar" class="botao" src="images/carousel/seta-esquerda.png" alt="">
+                <article>    
+                    <img id="moldura" class="fadeIn" src="images/carousel/img1.png" alt="">
+                </article>
+                <img id="btnAvancar" class="botao" src="images/carousel/seta-direita.png" alt="">
+            </section>
+
         </section>
 
         <section id="schedules">
@@ -69,28 +74,28 @@
             <h1>GALERIA</h1>
             <section class="cortes">
                 <article>
-                    <img src="images/gallery/gallery1.png">
+                    <img src="images/gallery/corte1.jpg">
                 </article>
                 <article>
-                    <img src="images/gallery/gallery1.png">
+                    <img src="images/gallery/corte2.jpg">
                 </article>
                 <article>
-                    <img src="images/gallery/gallery1.png">
+                    <img src="images/gallery/corte3.jfif">
                 </article>
                 <article>
-                    <img src="images/gallery/gallery1.png">
+                    <img src="images/gallery/corte4.jfif">
                 </article>
                 <article>
-                    <img src="images/gallery/gallery1.png">
+                    <img src="images/gallery/corte5.jfif">
                 </article>
                 <article>
-                    <img src="images/gallery/gallery1.png">
+                    <img src="images/gallery/corte6.jpg">
                 </article>
                 <article>
-                    <img src="images/gallery/gallery1.png">
+                    <img src="images/gallery/corte7.png">
                 </article>
                 <article>
-                    <img src="images/gallery/gallery1.png">
+                    <img src="images/gallery/corte8.jpg">
                 </article>
     
             </section>
@@ -107,8 +112,11 @@
                     <h3>ALISSON BARBOSA</h3>
 
                     <p> 
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Maecenas pretium fringilla enim, quis maximus velit ullamcorper non. 
+                        Chegou a hora de dar um upgrade no visual! 
+                        Venha para a Barbearia Modelo e saia com um 
+                        corte de cabelo ou barba que vai te surpreender. 
+                        Marque já o seu horário e descubra o estilo 
+                        que é a sua cara!
                     </p>
                     
                     <h4>BARBEIRO ESPECIALISTA EM</h4>

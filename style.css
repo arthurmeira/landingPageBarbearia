@@ -54,24 +54,35 @@ nav a:hover{
 /*MAIN*/
 
 #carousel{
-    background-color: var(--white_cl);
+    background-color: var(--dark_cl);
     width: 100%;
-    height: 600px;
+    height: auto;
+}
+
+.carr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.carr .botao{
+    background-color: #FF8B4A;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 4px;
+    width: 32px;
 }
 
 #carousel article img{
-    width: 100%;
-    height: 600px;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-.down_angle{
-    position: absolute; /* ABSOLUTE na tag "filha", faz com que possamos mover .donw_angle por todo HTML*/
-    left: 50%; /* Posicionando no meio horizontalmente */
-    margin-top: -20px;
-    background-color: var(--orange_cl);
-    border-radius: 50%;
-    width: 32px;
-    z-index: 1;
+    border-radius: 10px;
+    width: 1345;
+    height: auto;
 }
 
 /*HORÁRIOS*/
@@ -169,6 +180,11 @@ strong{
     display: block;
 }
 
+
+.obs{
+    padding: 0px 20px 0px 20px;
+}
+
 .btn h4{
     color: var(--white_cl);
 }
@@ -203,6 +219,11 @@ strong{
     padding-top: 100px;
     padding-bottom: 100px;
     background-color: var(--dark_cl);
+}
+
+#gallery img{
+    width: 330px;
+    height: 340px;
 }
 
 .cortes{
@@ -264,6 +285,7 @@ strong{
     border-radius: 10px;
     border: 4px dashed var(--orange_cl);
     width: 370px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -274,7 +296,7 @@ strong{
 
 #about .alisson{
     border-radius: 10px;
-    width: 500px;
+    width: 540px;
 }
 
 #about h3, #about p{
@@ -292,9 +314,15 @@ strong{
     padding: 220px;
 }
 
-#content h3, p, h4{
-    margin-top: 30px;
+.info .content{
+    margin-bottom: 20px;
 }
+
+.info .content p{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 
 footer{
     background-color: var(--dark_cl);
@@ -311,6 +339,7 @@ footer{
     display: flex;
     align-items:center;
     justify-content: space-evenly;
+    
     padding: 60px 0px 60px 0px;
 }
 
@@ -371,8 +400,6 @@ footer{
         justify-content: center;
     }
 
-   
-
     .right{
         width: 100%;
         margin: 40px auto;
@@ -389,6 +416,11 @@ footer{
     .container{
         width: 90%;
     }
+
+    #carousel article img{
+        width: 1050px;
+        height: auto;
+    }
 }
 
 @media (max-width: 1370px) {
@@ -399,7 +431,6 @@ footer{
     }
 
     #about .info{
-
         text-align: center;
         flex-direction:column-reverse
     }
@@ -420,6 +451,11 @@ footer{
     #about .alisson{
         border-radius: 10px;
         width: 400px;
+    }
+
+    #carousel article img{
+        width: 850px;
+        height: auto;
     }
 
 }
@@ -475,7 +511,14 @@ footer{
         width: 250px;
     }
     
+    #carousel article img{
+        width: 650px;
+        height: auto;
+    }
 
+    .obs{
+        padding: 30px 20px 0px 20px;
+    }
 
 }
 
@@ -540,6 +583,11 @@ footer{
         width: 220px;
     }
 
+    #carousel article img{
+        width: 550px;
+        height: auto;
+    }
+
 }
 
 @media (max-width: 645px) {
@@ -553,6 +601,18 @@ footer{
 
     #gallery img{
         width: 340px;
+    }
+
+    #carousel article img{
+        width: 450px;
+        height: auto;
+    }
+    .carr .botao{
+        display: none;
+    }
+
+    .right{
+        text-align: center;
     }
 }
 
@@ -599,6 +659,8 @@ footer{
         padding: 20px;      
     }
 
+
+
     #about{
        width: 100%;
        margin: 0 auto;
@@ -611,13 +673,10 @@ footer{
         flex-direction: column;
         
     }
-
    
-
-
-    
-
-
-    
+    #carousel article img{
+        width: 350px;
+        height: auto;
+    }
 
 }
