@@ -27,9 +27,11 @@ header, img nav{
 }
 
 header img{
+    margin-top: 20px;
     margin-bottom: 30px;
     border: 4px dashed var(--orange_cl);
     border-radius: 50%;
+
 }
 
 nav a{
@@ -337,7 +339,7 @@ footer{
     width: 70%;
     margin: 0 auto;
     display: flex;
-    align-items:center;
+    align-items: safe;
     justify-content: space-evenly;
     
     padding: 60px 0px 60px 0px;
@@ -610,10 +612,6 @@ footer{
     .carr .botao{
         display: none;
     }
-
-    .right{
-        text-align: center;
-    }
 }
 
 
@@ -659,7 +657,9 @@ footer{
         padding: 20px;      
     }
 
-
+    .right{
+        text-align: center;
+    }
 
     #about{
        width: 100%;
@@ -679,4 +679,11 @@ footer{
         height: auto;
     }
 
+}
+
+@media (max-width: 350px) {
+    #carousel article img{
+        width: 100%;
+        height: auto;
+    }  
 }
